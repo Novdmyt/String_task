@@ -20,9 +20,9 @@ public class Task_2StringBuffer {
         return sb.toString();
     }
     private void getWord(){
-        String[ ]  worl = getData().split(", ");
+        String[ ]  word = getData().split(", ");
         int count = 0;
-        for (String s: worl){
+        for (String s: word){
             count++;
             System.out.println(count + ") " + s);
         }
