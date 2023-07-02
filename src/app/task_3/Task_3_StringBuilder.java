@@ -6,12 +6,13 @@ public class Task_3_StringBuilder {
 
     public static void main(String[] args) {
         Task_3_StringBuilder sb = new Task_3_StringBuilder();
+        String name = "Bob, Alice, Tom, Lucy, Bob, Lisa";
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter name for search: ");
         String search = scanner.nextLine();
         sb.getData(name,search);
     }
-    public static String name = "Bob, Alice, Tom, Lucy, Bob, Lisa";
+
     private void getData(String name, String searchName){
         StringBuilder sb = new StringBuilder(name);
         int count = 0;
