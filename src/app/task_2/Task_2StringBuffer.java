@@ -9,7 +9,7 @@ public class Task_2StringBuffer {
 
     public   String world ="orange, plum, tomato, onion, grape, onion";
 
-       private String getData(){
+       private StringBuffer getData(){
         StringBuffer sb = new StringBuffer(world);
         int index;
         for(int i = 0; i < sb.length(); i++){
@@ -17,10 +17,10 @@ public class Task_2StringBuffer {
                 sb.delete(index, index + "onion, ".length());
             }
         }
-        return sb.toString();
+        return sb;
     }
     private void getWord(){
-        String[ ]  word = getData().split(", ");
+        String[ ]  word = getData().toString().split(", ");
         int count = 0;
         for (String s: word){
             count++;

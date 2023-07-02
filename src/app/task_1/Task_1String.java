@@ -18,7 +18,7 @@ public class Task_1String {
 
     }
     private  String getWorld(){
-        world = world.replace("b","o");
-        return world;
+        return world.replace("b","o");
+
     }
 }
